@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 4px 0px;
+	color: #243447;
+	text-align: center;
+	background: linear-gradient(135deg, #e8f5f2, #f8efe5);
+}
+.imagen {
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%; /* La imagen ocupará la mitad del ancho de su contenedor */
+    height: auto; /* La imagen ocupará la mitad de la altura de su contenedor */
+    
+
+}
+.descripcion {
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%; /* La descripción ocupará la mitad del ancho de su contenedor */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+.contenedor {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre la descripción y la imagen */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    width: 100%; /* Ancho del contenedor */
+}
+.contenedor1 {
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    width: 100%; /* Ancho del contenedor */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
