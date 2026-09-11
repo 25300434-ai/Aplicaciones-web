@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+	--dark: #1d2730;
+	--text: #263238;
+	--muted: #66737a;
+	--background: #f4f5f3;
+	--white: #ffffff;
+	--border: #e1e5e3;
+	--accent: #d95d43;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: var(--text);
+	background: var(--background);
+	font-family: 'DM Sans', Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 6%;
+	background: var(--dark);
+	color: var(--white);
+}
+
+header h1 {
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.8rem;
+}
+
+nav ul {
+	display: flex;
+	gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	color: var(--white);
+	font-size: .95rem;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #f2b24b;
+}
+
+.animes-page {
+	width: min(1180px, 90%);
+	margin: 0 auto;
+	padding: 60px 0 80px;
+}
+
+.intro {
+	max-width: 620px;
+	margin-bottom: 36px;
+}
+
+.eyebrow,
+.card-tag {
+	margin: 0 0 8px;
+	color: var(--accent);
+	font-size: .75rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.intro h2 {
+	margin: 0 0 12px;
+	font-size: clamp(2.8rem, 7vw, 5rem);
+	line-height: .95;
+}
+
+.intro-text {
+	margin: 0;
+	color: var(--muted);
+	font-size: 1.05rem;
+	line-height: 1.6;
+}
+
+.anime-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.anime-card {
+	display: flex;
+	min-height: 420px;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--white);
+	box-shadow: 0 5px 14px rgba(29, 39, 48, .06);
+}
+
+.anime-card:hover {
+	box-shadow: 0 8px 20px rgba(29, 39, 48, .12);
+}
+
+.card-art {
+	display: flex;
+	min-height: 145px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	color: var(--dark);
+}
+
+.card-art span {
+	font-size: 4rem;
+}
+
+.card-art small {
+	align-self: flex-start;
+	font-size: .75rem;
+	font-weight: bold;
+}
+
+.card-content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.card-content h3 {
+	margin: 0 0 10px;
+	font-size: 1.5rem;
+}
+
+.card-content > p:not(.card-tag) {
+	margin: 0;
+	color: var(--muted);
+	font-size: .92rem;
+	line-height: 1.55;
+}
+
+dl {
+	display: flex;
+	gap: 18px;
+	margin: auto 0 0;
+	padding-top: 16px;
+	border-top: 1px solid var(--border);
+}
+
+dt {
+	color: #7c878b;
+	font-size: .68rem;
+	text-transform: uppercase;
+}
+
+dd {
+	margin: 3px 0 0;
+	font-size: .78rem;
+	font-weight: bold;
+}
+
+.card-naruto .card-art { background: #f4c15d; }
+.card-one-piece .card-art { background: #8fc6c8; }
+.card-dragon-ball .card-art { background: #ee8a73; }
+.card-demon-slayer .card-art { background: #a5bd9f; }
+.card-my-hero .card-art { background: #e5cdd1; }
+.card-attack-titan .card-art { background: #b4c5cb; }
+.card-jujutsu .card-art { background: #b9add0; }
+.card-haikyuu .card-art { background: #efa068; }
+
+.home-page {
+	width: min(1180px, 90%);
+	margin: 0 auto;
+	padding: 50px 0 70px;
+}
+
+.home-hero {
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	gap: 40px;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.hero-image {
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0 5px 14px rgba(29, 39, 48, .12);
+}
+
+.hero-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.contenido h2 {
+	margin: 0 0 12px;
+	font-size: 1.8rem;
+}
+
+.contenido p,
+.caracteristicas p,
+.diferencia p,
+.popularidad p {
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+.caracteristicas,
+.diferencia,
+.generos,
+.popularidad {
+	margin-top: 24px;
+	padding: 26px;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--white);
+}
+
+.home-page h2,
+.home-page h3 {
+	color: var(--dark);
+}
+
+.home-page li {
+	margin-bottom: 8px;
+	line-height: 1.5;
+}
+
+@media (max-width: 950px) {
+	.anime-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.home-hero {
+		grid-template-columns: 1fr;
+	}
+}
+
+
