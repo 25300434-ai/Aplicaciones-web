@@ -113,18 +113,26 @@ nav a:focus {
 .card-art {
 	display: flex;
 	position: relative;
-	min-height: 145px;
+	min-height: 180px;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0;
 	color: var(--dark);
 }
 
+.card-art a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .card-art img {
 	display: block;
 	width: 100%;
-	height: 145px;
+	height: 180px;
 	object-fit: cover;
+	object-position: center;
+	background: rgba(255, 255, 255, .35);
 }
 
 .card-art span {
